@@ -248,6 +248,8 @@
         </div>
       </div>
       <form class="contact-form reveal reveal-delay-2" id="contactForm" action="https://formspree.io/f/xwvrzvrv" method="POST" onsubmit="handleSubmit(event)">
+        <!-- Honeypot anti-spam: invisible field that bots fill, humans don't -->
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Nom complet</label>
